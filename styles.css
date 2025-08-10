@@ -1,0 +1,304 @@
+/* ====== RESET & BASE ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f8f8f8;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ====== NAVIGATION ====== */
+.nav {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.brand {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.brand span {
+  color: #ff4b2b;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ff4b2b;
+}
+
+.cta {
+  background: #ff4b2b;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+}
+
+/* ====== HERO ====== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg, #ff4b2b 0%, #ff416c 100%);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.hero-left h1 {
+  font-size: 2.5rem;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.hero-left span {
+  color: #ffe100;
+}
+
+.typing {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color: #ffe9a0;
+}
+
+.lead {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+.hero-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  background: #fff;
+  color: #ff4b2b;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #ffe9a0;
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.card-3d {
+  background: #fff;
+  color: #222;
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease;
+}
+
+.card-3d:hover {
+  transform: rotateY(10deg) rotateX(5deg) scale(1.03);
+}
+
+.card-info {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* ====== ABOUT ====== */
+.about {
+  padding: 4rem 0;
+  background: #fff;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stats li {
+  list-style: none;
+  text-align: center;
+}
+
+.skill {
+  background: #f3f3f3;
+  margin-bottom: 0.8rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  position: relative;
+}
+
+.skill span {
+  position: absolute;
+  right: 1rem;
+  color: #555;
+}
+
+/* ====== PROJECTS ====== */
+.projects {
+  padding: 4rem 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transform: translateY(40px);
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+
+.project-card.reveal-up.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.project-card .thumb {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+}
+
+.meta {
+  padding: 1rem;
+}
+
+.meta h3 {
+  margin-bottom: 0.5rem;
+}
+
+.small {
+  color: #ff4b2b;
+}
+
+/* ====== SKILLS ====== */
+.skills {
+  padding: 3rem 0;
+  background: #fff;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.chips span {
+  background: #f3f3f3;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* ====== CONTACT ====== */
+.contact {
+  padding: 4rem 0;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input, .contact textarea {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.map-placeholder {
+  background: #e9e9e9;
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* ====== ANIMATIONS ====== */
+@keyframes fadeUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

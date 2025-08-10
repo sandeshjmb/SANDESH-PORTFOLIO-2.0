@@ -1,0 +1,151 @@
+<!-- File: index.html --><!doctype html>
+
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced Portfolio — Sandesh Kumar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Sandesh<span>Coder</span></a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a class="cta" href="#contact">Contact</a>
+      </nav>
+      <button class="hamburger" aria-label="menu">☰</button>
+    </div>
+  </header>  <!-- HERO -->  <main>
+    <section id="home" class="hero">
+      <div class="blobs" aria-hidden="true">
+        <div class="blob b1"></div>
+        <div class="blob b2"></div>
+        <div class="blob b3"></div>
+      </div><div class="container hero-inner">
+    <div class="hero-left">
+      <h1 class="reveal">Hi, I'm <span>Sandesh</span></h1>
+      <p class="typing" data-text="Front-end Developer • Node.js • Animator"> </p>
+      <p class="lead reveal">I build sleek, performant websites with micro-interactions & clean code.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#projects">See Projects</a>
+        <a class="btn ghost" href="#contact">Hire Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="card card-3d">
+        <img src="/avataabns.jpg" al/avataabns.jpgt="avatar">
+        <div class="card-info">
+          <h3>Sandesh Kumar</h3>
+          <p>Abroz Coder — Front-end & Fullstack</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about">
+  <div class="container grid-2">
+    <div class="about-left">
+      <h2>About Me</h2>
+      <p>I study BCA and build production-ready web apps. I love animations, performance and writing clean, maintainable code.</p>
+      <ul class="stats">
+        <li><strong>6+</strong><span>Projects</span></li>
+        <li><strong>3</strong><span>Years learning</span></li>
+        <li><strong>1</strong><span>DPIIT Internship applied</span></li>
+      </ul>
+    </div>
+    <div class="about-right">
+      <div class="skills-list">
+        <div class="skill" data-skill="HTML">HTML <span>95%</span></div>
+        <div class="skill" data-skill="CSS">CSS <span>92%</span></div>
+        <div class="skill" data-skill="JS">JavaScript <span>88%</span></div>
+        <div class="skill" data-skill="Node">Node.js <span>75%</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects">
+  <div class="container">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <article class="project-card reveal-up">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop&s=123')"></div>
+        <div class="meta">
+          <h3>NextTee — E-commerce Mock</h3>
+          <p>Platform demo for T-shirt reselling with seller dashboard and checkout flow.</p>
+          <a class="small" href="#">View</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1523475496153-3f1d0b4b17a5?q=80&w=1200&auto=format&fit=crop&s=456')"></div>
+        <div class="meta">
+          <h3>Abroz Coder Channel Site</h3>
+          <p>Personal portfolio + blog layout for coding tutorials and resources.</p>
+          <a class="small" href="#">View</a>
+        </div>
+      </article>
+
+      <article class="project-card reveal-up">
+        <div class="thumb" style="background-image:url('https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop&s=789')"></div>
+        <div class="meta">
+          <h3>Student ID Generator</h3>
+          <p>A lightweight app to create printable student IDs (PDF export).</p>
+          <a class="small" href="#">View</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills">
+  <div class="container">
+    <h2>Skills & Tools</h2>
+    <div class="chips">
+      <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Git</span><span>Figma</span>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="container grid-2">
+    <div>
+      <h2>Contact</h2>
+      <p>Want to work together? Send a message.</p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+      </form>
+    </div>
+    <div>
+      <h3>Quick info</h3>
+      <p><strong>Email:</strong> sandeshjmb@gmail.com</p>
+      <p><strong>Phone:</strong> 8581829783</p>
+      <div class="map-placeholder">Map / Location</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">© 2025 Sandesh Kumar — Built with ❤️</div>
+</footer>
+
+  </main>  <script src="script.js"></script></body>
+</html>/
+
